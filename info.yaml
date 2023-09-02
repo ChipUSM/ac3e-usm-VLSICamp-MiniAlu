@@ -1,7 +1,7 @@
 --- 
 # TinyTapeout project information
 project:
-  wokwi_id:    374776102457609217        # If using wokwi, set this to your project's ID
+  wokwi_id:    374778593968622593       # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
@@ -21,43 +21,45 @@ yaml_version: 4
 #
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       ""      # Your name
-  title:        ""      # Project title
+  author:       "Vicente Martinez, Cristobal Sanchez, Mauricio Pinto, Antar Derpich"      
+  title:        "MINI ALU"      # Project title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  ""      # Short description of what your project does
-
+  description:  "a mini alu with 4 bits, 2 bidirectionals that indicates what operation is the alu doing between XOR, OR, AND & addition"     
+  
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-      Explain how your project works
+      A mini calculator with two bidirectionals that will change between which operations are being executed, then with the switches of the 4 bits A and the 
+      4 Bits B they will define the values ​​that will pass through the mini calculator resulting in 4 bits and in the case of addition a Carry
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
-      Explain how to test your project
+      First of all, Use the bidirectionals to define all the operations, then try all the possible responses of each operation and see if they fit what it should be.
+      
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
-    - none
+    - A0
+    - A1
+    - A2
+    - A3  
+    - B0
+    - B1
+    - B2
+    - B3
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - segment a
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
-    - dot
+    - O0
+    - O1
+    - 02
+    - O3
+    - Carry
+    - none
+    - none
+    - none
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
-    - none
-    - none
+    - S0
+    - S1
     - none
     - none
     - none
