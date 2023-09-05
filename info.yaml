@@ -24,12 +24,17 @@ documentation:
   author:       "Vicente Martinez, Cristobal Sanchez, Mauricio Pinto, Antar Derpich"      
   title:        "MINI ALU"      # Project title
   language:     "Wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "a mini alu with 4 bits, 2 bidirectionals that indicates what operation is the alu doing between XOR, OR, AND & addition"     
+  description:  "This project is a Mini Alu with 4 bits, 2 bidirectionals used as inputs that indicates which operation is the Alu doing between XOR, OR, AND & addition"     
   
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
       A mini calculator with two bidirectionals that will change between which operations are being executed, then with the switches of the 4 bits A and the 
-      4 Bits B they will define the values ​​that will pass through the mini calculator resulting in 4 bits and in the case of addition a Carry
+      4 Bits B they will define the values ​​that will pass through the mini calculator resulting in 4 bits and in the case of addition a Carry.
+      The bidirectionals bits are defined by:
+      00:XOR
+      01:OR
+      10:AND
+      11:+
 
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test:  |
@@ -50,7 +55,7 @@ documentation:
   outputs:
     - O0
     - O1
-    - 02
+    - O2
     - O3
     - Carry
     - none
